@@ -2,6 +2,7 @@ const { Client, GatewayIntentBits, Partials, Options } = require("discord.js")
 const { loadCommands } = require("./handlers/commandHandler")
 const { loadEvents } = require("./handlers/eventHandler")
 const config = require("./config.json")
+const croxydb = require("croxydb")
 
 const client = new Client({
   intents: [
